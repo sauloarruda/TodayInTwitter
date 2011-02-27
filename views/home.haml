@@ -1,0 +1,15 @@
+%form{:action => 'timeline', :class => 'form', :method => 'POST'}
+	%h2 Say your twitter username, list and period to see the timeline
+
+	%label{:for => 'username'} Username:
+	%input{:name => 'username', :id => 'username'}
+
+	%label{:for => 'list'} List:
+	%input{:name => 'list', :id => 'list'}
+
+	%label{:for => 'period_start'} Period:
+	%input{:name => 'period_start', :id => 'period_start'} 
+	to
+	%input{:name => 'period_end', :id => 'period_end'}
+
+	%button{:name => 'commit', :type => 'submit'} Submit
